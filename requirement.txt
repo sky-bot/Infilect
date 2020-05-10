@@ -1,0 +1,8 @@
+Django==2.2.4
+django-redis==4.10.0
+django-templated-mail==1.1.1
+djangorestframework==3.11.0
+djoser==2.0.3
+pytz==2020.1
+redis==3.5.1
+sqlparse==0.3.1

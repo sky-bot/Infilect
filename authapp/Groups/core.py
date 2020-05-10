@@ -31,5 +31,6 @@ class GroupPhotoDAL:
 
 
     @staticmethod
+    @cache_it(key_prefix="_get_all_photos_for_group", timeout=30 * 24 * 60 * 60)
     def _get_all_photos_for_group(group_id):
-        return list(Photos.objects.filter(group_id="1185322@N21").values())
+        return list(Photos.objects.filter(group_id=group_id).values())

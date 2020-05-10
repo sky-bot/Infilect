@@ -6,7 +6,7 @@ from authapp.Groups.core import GroupPhotoDAL
 
 class GroupPhoto(APIView):
     def get(self, request, *args, **kwargs):
-        group_id = kwargs.get('group_id')
+        group_id = kwargs.get('group_id') or request.get('group')
         if not group_id:
             raise ValidationError(detail="Input not provided")
 
