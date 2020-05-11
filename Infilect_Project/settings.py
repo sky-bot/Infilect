@@ -94,7 +94,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthentication',
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 15
+    'PAGE_SIZE': 15,
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.NamespaceVersioning'
 }
 
 # Password validation

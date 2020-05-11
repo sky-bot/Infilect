@@ -7,6 +7,8 @@ from authapp.Photos.photos_serializer import PhotosSerializer
 class PhotoInfoDAL:
     @staticmethod
     def get_selialized_data(photo_id):
+        if not isinstance(photo_id, int):
+            photo_id = int(photo_id)
         photo_info = PhotoInfoDAL.get_photo_info(photo_id)
         serialized_data = PhotosSerializer(photo_info, many=True)
         return Response(serialized_data.data)

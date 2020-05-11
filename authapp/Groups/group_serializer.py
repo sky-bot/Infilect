@@ -7,7 +7,7 @@ class GroupSerializer(serializers.Serializer):
     group_name = serializers.SerializerMethodField()
     description = serializers.SerializerMethodField()
     rules = serializers.SerializerMethodField()
-    member = serializers.SerializerMethodField()
+    members = serializers.SerializerMethodField()
     pool_count = serializers.SerializerMethodField()
 
     def get_group_id(self, group):
@@ -22,8 +22,8 @@ class GroupSerializer(serializers.Serializer):
     def get_rules(self, group):
         return group.rules
 
-    def get_member(self, group):
-        return group.member
+    def get_members(self, group):
+        return group.members
 
     def get_pool_count(self, group):
         return group.pool_count
