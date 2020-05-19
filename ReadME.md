@@ -21,7 +21,7 @@ http://localhost:8000/api/v1/groups
 
 You need to send the following in headers
 
-Authorization : Token <token you get from login>
+Authorization : Token token_you_get_from_login
 
 You can refer to Screenshots: S2.2
 
@@ -48,7 +48,7 @@ http://localhost:8000/api/v1/group/583098@N23
 
 You need to send the following in headers
 
-Authorization : Token <token you get from login>
+Authorization : Token token_you_get_from_login
 
 Response Structure:
 
@@ -75,7 +75,7 @@ http://localhost:8000/api/v1/photos?group=1225814@N24
 
 You need to send the following in headers
 
-Authorization : Token <token you get from login>
+Authorization : Token token_you_get_from_login
 
 {
     "links": 
@@ -99,7 +99,7 @@ http://localhost:8000/api/v1/photos/49548820753/
 
 You need to send the following in headers
 
-Authorization : Token <token you get from login>
+Authorization : Token token_you_get_from_login
 
 Sample response
 [
@@ -122,7 +122,7 @@ This is POST API, you need to send.
 
 You need to send the following in headers
 
-Authorization : Token <token you get from login>
+Authorization : Token token_you_get_from_login
 
 You wont get any response in this API, apart from 204 No Content Response.
 Post this api you wont be able to use Authorization token  
